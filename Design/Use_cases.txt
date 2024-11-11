@@ -1,0 +1,151 @@
+Use Case: MoveMainCharacter 
+Primary actor: Player 
+Goal in context: To control the movement of the main character in the game. 
+Preconditions: Game board is loaded, main character is not blocked by barriers. 
+Trigger: Player presses a valid keyboard key to move the main character. 
+Scenario: 
+1. Player: Presses a keyboard key (up, down, left, or right). 
+2. System: Checks if the move is valid (no barriers or enemies in the target cell). 
+3. System: If the move is valid, updates the main character's position on the board. 
+4. System: Checks if the main character has collected any rewards or encountered punishments. 
+5. System: Updates the player's score accordingly. 
+6. System: If the game-winning conditions are met (all regular rewards collected), the game ends with a win. 
+7. System: If the main character encounters a moving enemy, the game ends with a loss. 
+Exceptions: 
+1. The move is invalid (barriers or enemies in the target cell), the system will prevent the main character from moving. 
+2. The player presses an invalid keyboard key (e.g., a key that does not correspond to a valid move or a blocked path), the system should ignore the key press and not move the main character. 
+Priority: Essential, must be implemented. 
+When available: From the start of the game until it ends. 
+Frequency of use: Frequently used during the game, based on player input. 
+Channel to actor: Keyboard input. 
+Secondary actors: None. 
+Channels to secondary actors: N/A. 
+Open issues: 
+How fast should the main character be able to move (e.g., one cell per tick)? 
+Should there be any additional visual or audio feedback for unsuccessful moves? 
+ 
+ 
+Use Case: CollectReward 
+Primary actor: Player 
+Goal in context: To collect rewards by moving the main character to cells containing rewards. 
+Preconditions: Game board is loaded, rewards are available in certain cells. 
+Trigger: Main character moves to a cell containing a reward. 
+Scenario: 
+1. Player: Moves the main character to a cell containing a reward. 
+2. System: Removes the reward from the cell. 
+3. System: Adds the reward amount to the player's score. 
+4. System: Checks if the game-winning conditions are met. 
+Exceptions: None. 
+Priority: Essential, must be implemented. 
+When available: From the start of the game until it ends. 
+Frequency of use: Frequent, as rewards are scattered throughout the game. 
+Channel to actor: Player's input controlling the main character. 
+Secondary actors: None. 
+Channels to secondary actors: N/A. 
+Open issues: None. 
+ 
+ 
+Use Case: EncounterPunishment 
+Primary actor: Player 
+Goal in context: To handle penalties when the main character moves to a cell containing a punishment. 
+Preconditions: Game board is loaded, punishments are available in certain cells. 
+Trigger: Main character moves to a cell containing a punishment. 
+Scenario: 
+1. Player: Moves the main character to a cell containing a punishment. 
+2. System: Removes the punishment from the cell. 
+3. System: Penalizes the player by the amount of the punishment. 
+4. System: Checks if the player's score drops below 0, resulting in a loss. 
+Exceptions: None. 
+Priority: Essential, must be implemented. 
+When available: From the start of the game until it ends. 
+Frequency of use: Occasional, as punishments are placed throughout the game. 
+Channel to actor: Player's input controlling the main character. 
+Secondary actors: None. 
+Channels to secondary actors: N/A. 
+Open issues: None. 
+ 
+ 
+Use Case: GameOver 
+Primary actor: Player 
+Goal in context: To end the game, either in a win or a loss. 
+Preconditions: Game board is loaded, game-winning or game-losing conditions are met. 
+Trigger: Game-winning or game-losing conditions are met. 
+Scenario: 
+1. System: Checks if the game-winning conditions are met (all regular rewards collected). 
+2. System: If game-winning conditions are met, the game ends with a win. 
+3. System: Checks if the player's score dropped below 0 (game-losing condition). 
+4. System: If the game-losing condition is met, the game ends with a loss. 
+5. System: Displays the final score and time elapsed on the screen. 
+Exceptions: None. 
+Priority: Essential, must be implemented. 
+When available: Throughout the game, it triggers when game-winning or game-losing conditions are met. 
+Frequency of use: Typically happens once per game. 
+Channel to actor: System triggers based on game conditions. 
+Secondary actors: None. 
+Channels to secondary actors: N/A. 
+Open issues: None. 
+ 
+ 
+Use Case: MoveMovingEnemy 
+Primary actor: System 
+Goal in context: To move the animated enemies towards the main character. 
+Preconditions: Game board is loaded, animated enemies are present. 
+Trigger: Time tick in the game. 
+Scenario: 
+1. System: Calculates the direction in which each animated enemy should move to get closer to the main character. 
+2. System: Checks if the move is valid (no barriers in the target cell). 
+3. System: Updates the position of each animated enemy on the board. 
+Exceptions: None. 
+Priority: Essential, must be implemented. 
+When available: Throughout the game, at each game tick. 
+Frequency of use: Frequent, as animated enemies move at each tick. 
+Channel to actor: Game engine controls enemy movement. 
+Secondary actors: Animated enemies. 
+Channels to secondary actors: Directly controlled by the game engine. 
+Open issues: 
+Should there be any specific behavior for enemies when they reach a wall or barrier? 
+Should enemy movement speed be adjustable? 
+ 
+ 
+Use Case: GenerateBonusReward 
+Primary actor: System 
+Goal in context: To randomly generate bonus rewards during the game. 
+Preconditions: Game board is loaded, bonus rewards are not currently on the board. 
+Trigger: Random event during the game. 
+Scenario: 
+1. System: Generates a random location on the board for a bonus reward. 
+2. System: Places the bonus reward on the selected cell. 
+3. System: Sets a timer to remove the bonus reward after a certain number of ticks. 
+Exceptions: None. 
+Priority: Important, enhances gameplay but not essential. 
+When available: Randomly during the game. 
+Frequency of use: Rare, as bonus rewards appear sporadically. 
+Channel to actor: System triggers bonus reward generation. 
+Secondary actors: Bonus rewards. 
+Channels to secondary actors: Bonus rewards appear and disappear on their own. 
+Open issues: 
+How often should bonus rewards appear (e.g., every few ticks)? 
+How long should a bonus reward remain on the board before disappearing? 
+ 
+ 
+Use Case: DeactivateSystem 
+Primary actor: Player 
+Goal in context: To allow the player to deactivate the game system. 
+Preconditions: Game is in progress. 
+Trigger: Player wants to exit or pause the game. 
+Scenario: 
+1. Player: Initiates the deactivation process (e.g., pressing a specific key or button). 
+2. System: Prompts the player to confirm deactivation. 
+3. Player: Confirms deactivation. 
+4. System: Ends the game and displays the final score and time. 
+Exceptions: None. 
+Priority: Important, enhances user experience but not essential. 
+When available: At any point during the game. 
+Frequency of use: Occasional, player-initiated. 
+Channel to actor: Player's input to initiate deactivation. 
+Secondary actors: None. 
+Channels to secondary actors: N/A. 
+Open issues: 
+Should there be an option to save the game progress before deactivation? 
+What kind of confirmation or feedback should be provided when deactivation is initiated? 
+

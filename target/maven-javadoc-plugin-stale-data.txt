@@ -1,0 +1,50 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/src/main/java:/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Phase2 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' '/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Phase2 1.0-SNAPSHOT API'
+Interactables
+Logic
+Characters
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/src/main/java = 1701388169067
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/generated-sources/annotations = 1701846602481
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/tag-search-index.js = 1701846618258
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/overview-tree.html = 1701846618228
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/module-search-index.js = 1701846618256
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/index.html = 1701846618231
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/package-search-index.js = 1701846618257
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/link.svg = 1701846618298
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/serialized-form.html = 1701846618158
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/index-all.html = 1701846618280
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/allpackages-index.html = 1701846618255
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/member-search-index.js = 1701846618258
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/copy.svg = 1701846618296
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/script.js = 1701846618295
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/stylesheet.css = 1701846618294
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/search-page.js = 1701846618302
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/overview-summary.html = 1701846618283
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/help-doc.html = 1701846618290
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/element-list = 1701846618121
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/search.html = 1701846618281
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/allclasses-index.html = 1701846618253
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/type-search-index.js = 1701846618257
+/Users/mrazzzzzzzz/CMPT276F23_group21/Documents/Phase2/target/site/apidocs/search.js = 1701846618300

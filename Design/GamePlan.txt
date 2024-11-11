@@ -1,0 +1,67 @@
+Westward: Cyborg's Odyssey Game Plan
+
+Game Title: Westward: Cyborg's Odyssey
+Game Setting: A sprawling 30 x 30 maze in the Westward Forest
+Map Size: 30 x 30 grid
+
+Introduction:
+
+In "Westward: Cyborg's Odyssey", players assume the role of a Cyborg navigating a vast forest maze from the starting point to the exit, eluding monsters, and collecting rewards. The game focuses on strategy, quick reflexes, and understanding the behaviors of the monsters.
+
+Cyborg (Main Character):
+
+- Representation: Distinctive image.
+- Movement: Keyboard-controlled. Can move up, down, left, or right to an adjacent cell unless blocked by a barrier or wall.
+- Initial Location: Start cell on the board map.
+- Movement Behavior: Moves at most one cell at each “tick” of the game.
+- Rewards Collection: Collects and removes rewards from the field, adding to the total score.
+- Punishments: Loses points when coming into contact with traps. The game concludes if the score goes negative or reaches 0.
+
+Monster:
+
+Monsters serve as the primary antagonists:
+- Representation: Distinct images for each monster type.
+- Movement Behavior: 
+  - When the Cyborg is within a 4x4 grid vicinity of a monster, the monster gives chase.
+  - If not, the monster wanders randomly throughout the board.
+- Effect on Cyborg: Direct contact with a monster results in the Cyborg's demise (Game Over), unless under the influence of a special reward.
+
+Rewards:
+
+1. Regular Rewards: Scattered throughout the map. Each one collected augments the player's score.
+2. Special Rewards: Granting unique boons:
+   - Protective Cover: Bestows a short-lived shield.
+   - Invincibility State: For a brief period, any monster touched by the Cyborg is vanquished.
+3. Bonus Rewards: 
+   - Appears randomly during gameplay and disappears after a few ticks.
+   - Score: Worth more than regular rewards.
+
+Punishments:
+
+- Traps: Strategically positioned around the map, triggering them deducts points from the player's score.
+
+Barriers:
+
+1. Walls: Surround the board with two openings – the start and end points.
+2. Additional Barriers: Randomly placed on the board to create a maze-like structure.
+
+Board:
+
+- Structure: A 2D grid surrounded by walls.
+- Initial Setup: At the start of the game, the board shows walls, barriers, regular rewards, traps, the Cyborg, and monsters.
+- Starting Point: A distinct cell on the boundary wall.
+- Exit Point: A distinct cell on another boundary wall. To win, the Cyborg must reach this after collecting all regular rewards.
+- Display: Shows the current score and elapsed playtime. A victorious player sees their final score and time.
+
+Gameplay Mechanics:
+
+- Winning Condition: Victory is achieved by guiding the Cyborg to the exit cell after collecting all regular rewards.
+- Losing Conditions: 
+  - The game concludes if the Cyborg contacts a monster without protective measures.
+  - The game concludes if the score reaches 0.
+
+Conclusion:
+
+"Westward: Cyborg's Odyssey" offers players an engaging journey filled with peril and opportunity. The expansive maze, different monster behaviors, and variety of rewards ensure a thrilling gameplay experience.
+
+Platform: Desktop application written entirely in Java.
